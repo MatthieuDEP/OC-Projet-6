@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.8rem 5.6rem;
+
+    .headerLogo {
+        width: 210px;
+        height: 68px;
+    }
+
+    .navigation {
+        
+        .navigationList {
+            display: flex;
+            list-style: none;
+            padding: 0;
+
+            .navigationListItem {
+                align-items: center;
+                margin-left: 3.5rem;
+                
+
+                .navigationListItemLink {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
