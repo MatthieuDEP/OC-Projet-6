@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.scss';
 import Banner from '../../components/banner/Banner';
-import bannerAbout from '../../components/banner/bannerAbout.jpg'
+import bannerAbout from '../../images/bannerAbout.jpg';
 import Collapse from '../../components/collapse/Collapse';
 
 export default function about() {

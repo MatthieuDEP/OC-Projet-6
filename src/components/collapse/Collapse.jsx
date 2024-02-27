@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './collapse.scss'
-import arrow from './arrow.svg'
+import arrow from '../../images/arrow.svg'
 
 export default function Collapse({title, children, styles = ''}) {
     

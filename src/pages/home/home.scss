@@ -1,4 +1,12 @@
 .home {
-    color: blue;
     margin: 0 5.6rem;
+
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #F6F6F6;
+        border-radius: 25px;
+        padding: 3.5rem 3.35rem;
+        gap: 3rem 3.5rem;  
+    }
 }
