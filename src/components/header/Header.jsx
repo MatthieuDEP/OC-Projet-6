@@ -12,7 +12,7 @@ export default function Header() {
             <nav className="navigation">
                 <ul className="navigationList">
                     <li className="navigationListItem"><Link to="/" className="navigationListItemLink">Accueil</Link></li>
-                    <li className="navigationListItem"><Link to="/about" className="navigationListItemLink">A propos</Link></li>
+                    <li className="navigationListItem"><Link to="/about" className="navigationListItemLink">A Propos</Link></li>
                 </ul>
             </nav>
         </header>

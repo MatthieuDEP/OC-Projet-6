@@ -72,4 +72,38 @@
             border-radius: 5px;
         }
     }
+
+    &__housing {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.8rem;
+
+        .collapse__housing {
+            width: calc(100% / 2 - 2.38rem);
+
+            .collapse {
+                width: 100%;
+                border-radius: 10px;
+
+                &__title {
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                }
+            }
+
+            .content {
+                width: 100%;
+                margin: 0 auto;
+                border-radius: 10px 10px 5px 5px;
+
+                .collapse__list {
+                    padding: 0;
+            
+                    .collapse__list--item {
+                        list-style-type: none;
+                    }
+                }
+            }
+        }
+    }
 }

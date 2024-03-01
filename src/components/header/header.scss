@@ -19,13 +19,16 @@
             .navigationListItem {
                 align-items: center;
                 margin-left: 3.5rem;
-                
 
                 .navigationListItemLink {
                     text-decoration: none;
                     color: black;
                     font-weight: 500;
                     font-size: 1.4rem;
+
+                    &:focus{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
