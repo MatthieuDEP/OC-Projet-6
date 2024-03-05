@@ -8,5 +8,18 @@
         border-radius: 25px;
         padding: 3.5rem 3.35rem;
         gap: 3rem 3.5rem;  
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        margin: 0 1.25rem;
+
+        &__gallery {
+            padding: 0;
+            background-color: #FFF;
+            gap: 1.25rem 0;
+        }
     }
 }

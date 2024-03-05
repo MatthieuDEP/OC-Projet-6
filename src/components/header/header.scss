@@ -4,32 +4,61 @@
     align-items: center;
     margin: 2.7rem 5.6rem 0 5.6rem;
 
-    .headerLogo {
+    &__logo {
         width: 210px;
         height: 68px;
     }
 
     .navigation {
         
-        .navigationList {
+        &__list {
             display: flex;
             list-style: none;
             padding: 0;
 
-            .navigationListItem {
-                align-items: center;
-                margin-left: 3.5rem;
+        }
+        
+        &__item {
+            align-items: center;
+            margin-left: 3.5rem;
 
-                .navigationListItemLink {
-                    text-decoration: none;
-                    color: black;
-                    font-weight: 500;
-                    font-size: 1.4rem;
+            a.active {
+                text-decoration: underline;
+            }
+        }
 
-                    &:focus{
-                        text-decoration: underline;
-                    }
-                }
+        &__link {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin: 1.25rem 1.25rem 0 1.25rem;
+
+        &__logo {
+            width: 145px;
+            height: 46px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .navigation {
+
+            &__item {
+                margin: 0 0 0 1.2rem;        
+            }
+            
+            &__link {
+                font-size: 0.75rem;
+                text-transform: uppercase;
+                white-space: nowrap;
             }
         }
     }

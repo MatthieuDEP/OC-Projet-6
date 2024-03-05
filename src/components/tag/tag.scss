@@ -9,7 +9,17 @@
     border-radius: 15px;
     width: 7.2rem;
     height: 1.6rem;
-    padding: 0.19rem 1.38rem 0.12rem 1.38rem;
+    padding: 0.19rem 1.2rem 0.12rem 1.2rem;
     white-space: nowrap;
     margin-right: 0.62rem;
+}
+
+@media (max-width: 768px) {
+    .tag {
+        font-size: 0.62rem;
+        width: 5.25rem;
+        height: 1.12rem;
+        padding: 0.14rem 0.55rem 0.11rem 0.55rem;
+        border-radius: 5px;
+    }
 }

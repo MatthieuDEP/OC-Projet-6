@@ -7,7 +7,7 @@
     margin-top: 2.7rem;
     margin-bottom: 1rem;
 
-    &__Title {
+    &__title {
         position: absolute;
         z-index: 999;
         color: #FFF;
@@ -21,7 +21,7 @@
         font-size: 3rem;
     }
 
-    &__Image {
+    &__image {
         width: 100%;
         height: 100%;
 
@@ -42,6 +42,32 @@
     &__about {
         img {
             filter: brightness(70%);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 6.9rem;
+        margin-top: 1.65rem;
+        margin-bottom: 1.35rem;
+
+        &__title {
+            width: 14.5rem;
+            font-size: 1.5rem;
+            text-align: left;
+            padding: 0 3rem 0 0;
+        }
+
+        &__image {
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        &__about {
+            margin-bottom: 0;
         }
     }
 }

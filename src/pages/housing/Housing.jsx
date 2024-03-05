@@ -13,7 +13,6 @@ export default function Housing() {
     const { id } = useParams();
 
     const selectedHousing = housingData.find((housing) => housing.id === id);
-    // console.log(selectedHousing)
 
     if (!selectedHousing) {
         return <NotFound />
@@ -59,7 +58,7 @@ export default function Housing() {
                 <Collapse styles="collapse__housing" title="Equipements">
                     <ul className="collapse__list">
                         {selectedHousing.equipments.map((equipement, id) => (
-                            <li className="collapse__list--item" key={id}>{equipement}</li>
+                            <li className="collapse__item" key={id}>{equipement}</li>
                         ))}
                     </ul>
                 </Collapse>

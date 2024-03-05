@@ -45,7 +45,7 @@
                 justify-content: flex-end;
                 margin-bottom: 1.4rem;
 
-                .owner__name {
+                &__name {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -60,7 +60,7 @@
                     }
                 }
 
-                .owner__image {
+                &__image {
                     width: 4rem;
                     height: 4rem;
 
@@ -76,6 +76,55 @@
             .housing__stars {
                 display: flex;
                 justify-content: flex-end;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .housing {
+        margin: 0 1.25rem;
+
+        &__infos {
+            flex-direction: column;
+
+            .housing__presentation {
+
+                .housing__infos--title {
+
+                    .housing__title {
+                        margin: 0 0 0.2rem 0;
+                        font-size: 1.2rem;
+                    }
+
+                    .housing__location {
+                        font-size: 0.88rem;
+                        margin: 0.3rem 0 0 0;
+                    }
+                }
+            }
+
+            .housing__infos--owner {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 0.50rem;
+
+                .owner { 
+                    margin: 0;
+
+                    &__name {
+
+                        .name {
+                            font-size: 0.75rem;
+                        }
+                    }
+
+                    &__image {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
             }
         }
     }
