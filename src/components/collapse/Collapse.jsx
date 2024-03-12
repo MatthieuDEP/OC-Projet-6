@@ -1,11 +1,17 @@
+// Imports de React
 import React, { useState } from "react";
+// Import du fichier de style
 import './collapse.scss'
+// Import de l'image
 import arrow from '../../images/arrow.svg'
 
+// Définition du composant sous forme de fonction
 export default function Collapse({title, children, styles = ''}) {
     
+    // Utilisation de useState pour suivre l'état du collapse
     const [isCollapsed, setIsCollapsed] = useState(true);
 
+    // Fonction pour gérer l'ouverture et la fermeture du collapse
     function openCollapse () {
         setIsCollapsed(!isCollapsed)
     };

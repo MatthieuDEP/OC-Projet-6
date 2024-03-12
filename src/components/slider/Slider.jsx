@@ -1,14 +1,20 @@
+// Imports de React
 import React, { useState } from "react";
+// Import du fichier de style
 import './slider.scss';
 
+// Définition du composant sous forme de fonction
 export default function Slider ({ images }) {
-    
+
+    // Utilisation de useState pour suivre l'index de l'image actuellement affichée
     const [imagesIndex, setImagesIndex] = useState(0);
 
+    // Fonction pour afficher l'image précédente
     function prevImage () {
         setImagesIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
     };
 
+    // Fonction pour afficher l'image suivante
     function nextImage () {
         setImagesIndex((prevIndex) => (prevIndex === images.length -1 ? 0 : prevIndex + 1));
     };

@@ -1,9 +1,14 @@
+// Import de React
 import React from 'react';
+// Import du fichier de style
 import './about.scss';
+// Import des composants
 import Banner from '../../components/banner/Banner';
-import bannerAbout from '../../images/bannerAbout.jpg';
 import Collapse from '../../components/collapse/Collapse';
+// Import de l'image
+import bannerAbout from '../../images/bannerAbout.jpg';
 
+// Définition du composant sous forme de fonction
 export default function about() {
     return (
         <main className="about">

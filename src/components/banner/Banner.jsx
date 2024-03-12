@@ -1,6 +1,9 @@
+// Import de React
 import React from 'react';
+// Import du fichier de style
 import './banner.scss'
 
+// Définition du composant sous forme de fonction
 export default function Banner({ title, imageSrcUrl, styles = '' }) {
     return (
         <div className={styles}>

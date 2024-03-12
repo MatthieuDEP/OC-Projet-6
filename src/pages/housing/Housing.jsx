@@ -1,19 +1,28 @@
+// Import de React
 import React from "react";
-import { useParams } from "react-router-dom";
+// Import du fichier de style
 import './housing.scss';
+// Import depuis la librairie React Router
+import { useParams } from "react-router-dom";
+// Import de la data
 import housingData from '../../data/housing.json';
+// Import des composants
 import Slider from "../../components/slider/Slider";
 import Tag from "../../components/tag/Tag";
 import Star from "../../components/star/Star";
 import Collapse from "../../components/collapse/Collapse";
 import NotFound from "../notFound/NotFound";
 
+// Définition du composant sous forme de fonction
 export default function Housing() {
 
+    // Utilisation de useParams pour récupérer l'ID du logement
     const { id } = useParams();
 
+    // Recherche des informations du logement correspondant à l'ID récupéré précédemment
     const selectedHousing = housingData.find((housing) => housing.id === id);
 
+    // Si aucune information n'est trouvée on retourne la page 404
     if (!selectedHousing) {
         return <NotFound />
     }

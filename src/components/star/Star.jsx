@@ -1,6 +1,9 @@
+// Import de React
 import React from "react";
+// Import du fichier de style
 import './star.scss';
 
+// Définition du composant sous forme de fonction
 export default function Star({ active }) {
     return (
         <span className={active ? 'star star-active' : 'star star-inactive'}>
